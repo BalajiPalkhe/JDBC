@@ -53,8 +53,6 @@ public class InsertInto
 			
 			System.out.println("inserted.....");
 			
-			
-			
 			//closed the object--------------
 			con.close();
 			
