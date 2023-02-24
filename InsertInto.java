@@ -15,10 +15,8 @@ public class InsertInto
 
 		try
 		{
-			
-			
 			//postgresql server class loading
-			Class.forName("org.postgresql.Driver");
+			//Class.forName("org.postgresql.Driver");
 //		
 //			//creating connection
 			String url="jdbc:postgresql://localhost:5432/Bala";
