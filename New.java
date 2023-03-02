@@ -2,9 +2,8 @@ package myJdbc;
 
 import java.sql.*;
 
-class JdbcP
+class New
 {
-	
 	public static void main(String[] args)
 	{
 		
@@ -20,15 +19,16 @@ class JdbcP
 			Connection con=DriverManager.getConnection(url,username,password);
 			
 			//creating a query
-			String q="select * from table1 where  tname like'%1'";
+			String q="select tname from table1 where tid=1";
 
 			//create a statement
 			
-			PreparedStatement stmt=con.prepareStatement(q);
+			//PreparedStatement stmt=con.prepareStatement(q);
 			
+			Statement ss = con.createStatement();
 			//execution of query
 			
-			ResultSet set=stmt.executeQuery();
+			ResultSet set=ss.executeQuery(q);
 			
 			//update of query
 		//	stmt.executeUpdate(q);
